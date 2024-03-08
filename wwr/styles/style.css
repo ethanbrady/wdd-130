@@ -4,8 +4,12 @@
     max-width:1600px;
     margin: 0 auto;
 }
-
-nav{
+header {
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
     display: flex;
     justify-content: space-around;
 }
@@ -14,6 +18,20 @@ nav{
     justify-self: center;
     align-self: center;
 }
+nav a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color)
+}
+nav a:hover {
+    margin: 0 auto;
+    color: var(--headline-color-on-color);
+    background-color: var(--nav-hover-background-color);
+}
+
 body {
     font-family: 'Protest Riot', sans-serif;
     margin: 0;
@@ -42,7 +60,6 @@ body {
     grid-row: 1/2;
     margin-top: 100px;
 }
-nav a,
 #hero-msg h1, #hero-msg h4,
 .button-box,
 main section {
@@ -54,7 +71,6 @@ main section {
     grid-column: 1/11;
     grid-row: 4/9;
 }
-
 body {
     background-color: var(--primary-color); 
 }
@@ -117,9 +133,6 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-nav a, nav a:hover, .home-title, h4, .book, .join, .book:hover, .join:hover, .msg h2, .msg p, footer, footer a, footer a:hover{
-    background-color: var(--accent2-color);
 }
 :root {
     /* change the values below to your colors from your palette */
